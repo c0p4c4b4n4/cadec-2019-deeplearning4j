@@ -1,0 +1,3 @@
+rootProject.name = 'Deeplearning4jDemo'
+include 'app'
+include 'training'

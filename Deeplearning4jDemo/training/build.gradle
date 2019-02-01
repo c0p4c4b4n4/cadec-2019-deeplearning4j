@@ -1,0 +1,11 @@
+plugins {
+    id "net.ltgt.apt-idea" version "0.15"
+}
+
+dependencies {
+    compile("org.projectlombok:lombok")
+    compile("org.deeplearning4j:deeplearning4j-core")
+    compile("org.nd4j:nd4j-native-platform") // native platform: using CPU instead of GPUs
+    compile("org.deeplearning4j:deeplearning4j-ui_2.10") // visualization
+    compile("ch.qos.logback:logback-core:1.1.6")
+}

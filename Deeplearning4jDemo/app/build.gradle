@@ -1,0 +1,26 @@
+plugins {
+    id "net.ltgt.apt-idea" version "0.15"
+}
+
+idea {
+    module {
+        apt {
+            // the dependency scope used for apt and/or compileOnly dependencies (when enabled above)
+            mainDependenciesScope = "COMPILE"
+        }
+    }
+}
+
+
+dependencies {
+//    annotationProcessor("org.projectlombok:lombok")
+//    runtime("org.projectlombok:lombok")
+    compile("org.projectlombok:lombok")
+    compile("org.springframework.boot:spring-boot-starter")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.deeplearning4j:deeplearning4j-core")
+    compile("org.nd4j:nd4j-native-platform") // native platform: using CPU instead of GPUs
+    testCompile("com.h2database:h2")
+
+}
